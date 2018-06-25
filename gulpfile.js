@@ -17,10 +17,16 @@ gulp.task('message', function (){
   return console.log('Gulp is running...')
 });
 
-//Copy all HTML files
-gulp.task('copyHTML', function(){
-  gulp.src('src/*.html')
+//Copy all root files
+gulp.task('copyRoot', function(){
+  gulp.src('src/*')
       .pipe(gulp.dest('dist'))
+});
+
+//Copy all includes
+gulp.task('copyIncludes', function(){
+  gulp.src('src/includes/*')
+      .pipe(gulp.dest('dist/includes'))
 });
 
 //Optimise images
@@ -52,11 +58,12 @@ gulp.task('scripts', function(){
     .pipe(gulp.dest('dist/js'))
 });
 
-gulp.task ('default', ['message', 'copyHTML', 'imageMin', 'sass', 'scripts']);
+gulp.task ('default', ['message', 'copyRoot', 'copyIncludes', 'imageMin', 'sass', 'scripts']);
 
 gulp.task ('watch', function(){
   gulp.watch('src/js/*.js', ['scripts']);
   gulp.watch('src/images/*', ['imageMin']);
   gulp.watch('src/sass/*.scss', ['sass']);
-  gulp.watch('src/*.html', ['copyHTML']);
+  gulp.watch('src/*', ['copyRoot']);
+  gulp.watch('src/includes/*', ['copyIncludes']);
 });

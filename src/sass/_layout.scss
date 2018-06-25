@@ -4,18 +4,24 @@
   top: 0;
   left: 0;
   width: 100%;
+  padding:0;
+  box-sizing: border-box;
   height:66px;
   overflow:hidden;
   background: transparent;
   transition: background 1000ms ease;
   z-index: 2;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
-.header__logo{
-width: 100px;
-float: left;
+.header__left-col{
+  padding: 11px;
 }
-.header__menu{
-  float: right;
+.header__right-col{
+  padding: 20px 10px;
+  text-align: right;
 }
 .header--scrolled{
   background: rgba(21,24,28,0.65);
@@ -30,7 +36,14 @@ float: left;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-@media(max-width:568px){
+/*Disable Parralx on mobile phones*/
+@media(max-width:650px){
+  .parralax{
+    background-attachment:scroll;
+  }
+}
+/*Disable Parralx on iPad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
   .parralax{
     background-attachment:scroll;
   }
