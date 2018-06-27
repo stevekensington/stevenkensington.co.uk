@@ -16,29 +16,10 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/main.js" async></script>
   </head>
   <body>
-    <div id="Menu" class="menu">
-      <div class="menu__close">
-        <a href="javascript:void(0);" class="menu__icon" onclick="closeMenu()"><img src="images/menu-close-icon.svg" width="44" height="44" alt="Close"></a>
-      </div>
-      <a href="index.html" class="menu__item">Home</a>
-      <a href="experience.html" class="menu__item">Experience</a>
-      <a href="work.html" class="menu__item">Work</a>
-      <!--<a href="experimentation.html" class="menu__item">Experimentation</a>-->
-      <a href="contact.html" class="menu__item">Contact</a>
-    </div>
-	  <div id="MenuFadeout" class="menu-fadeout" onclick="closeMenu()"><!--  --></div>
-    <div id="Header" class="header">
-        <div class="header__left-col">
-          <a href="javascript:void(0);" class="menu__icon" onclick="openMenu()"><img src="images/menu-icon.svg" width="44" height="44" alt="Menu"></a>
-        </div>
-        <div class="header__right-col">
-          <div id="Logo" class="logo logo--header">
-            <span class="logo__surround">SK</span>
-          </div>
-        </div>
-    </div>
+    <?php include("includes/_header.php");?>
     <div class="parralax parralax--subpage1">
       <div class="logo logo--parralax">
         <span class="logo__surround">SK</span>
@@ -51,7 +32,7 @@
         <p>You can find the Find and Connect App for iOS on the App Store.</p>
         <a href="https://itunes.apple.com/gb/app/bsg-wifi-find-wifi-hotspots/id897017163" target="_blank" class="button--top-margin"><img src="images/app-store-download-ios.png" alt="Available on the App Store"></a>
     </section>
-    <div class="parralax parralax--subpage2"></div>
+    <div class="parralax parralax--subpage2"><!-- --></div>
     <section class="section section--light">
       <h2>iOS Mobile App - iPhone</h2>
       <div class="gallery">
@@ -61,7 +42,7 @@
         <div class="gallery__item"><img src="images/work-fac-iphone-4.png" class="gallery__item-image gallery__item-image--mobile" alt="WLDS"></div>
       </div>
     </section>
-    <div class="parralax parralax--subpage2"></div>
+    <div class="parralax parralax--subpage2"><!-- --></div>
     <section class="section section--light">
       <h2>iOS Mobile App - iPad</h2>
       <div class="gallery">
@@ -70,9 +51,6 @@
         <div class="gallery__item"><img src="images/work-fac-ipad-3.png" class="gallery__item-image gallery__item-image--tablet" alt="WLDS"></div>
       </div>
     </section>
-    <section class="footer">
-      <a href="https://www.linkedin.com/in/steven-kensington-99b606163/" target="_blank" class="right-align"><img src="images/linkedin-white.png" width="35" height="32" alt="Linkedin" class="linkedin-image linkedin-image--footer"></a><p>&copy; Steven Kensington 2018</p>
-    </section>
+    <?php include("includes/_footer.php");?>
   </body>
-  <script src="js/main.js"></script>
 </html>
