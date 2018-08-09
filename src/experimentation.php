@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve Kensington - Experimentation</title>
+    <title>Steve Kensington - Contact</title>
     <meta name="description" content="Front end web developer and UI designer.">
     <meta name="keywords" content="Front End Web Developer,UI Developer,UI Design,HTML5,CSS3,Sass,BEM,JavaScript">
     <meta name="author" content="Steve Kensington">
@@ -27,23 +27,35 @@
     </div>
     <section class="section section--light">
       <h1>Experimentation</h1>
-      <p>I love experimenting with new technologies, some of the more successful examples are shown below.</p>
+      <p>Various projects that I have been playing around with.</p>
+    </section>
+    <div class="parralax parralax--subpage2"><!-- --></div>
+    <section class="section section--light">
+      <h2>To-Do List - ES6 JavaScript</h2>
+      <div class="section__centered-image-container"><img src="images/experimentation-to-do.png" class="section__centered-image section__centered-image--img" alt="To-Do List - ES6 JavaScript"></div>
+      <p>A filterable To-Do List using JavaScript ES6 with local storage.</p>
+      <a href="/todo/" target="_blank" class="button button--theme-color button--top-margin">View Project</a>
     </section>
     <div class="parralax parralax--subpage2"><!-- --></div>
     <section class="section section--light">
       <h2>CSS Animation</h2>
-      <p>A selection of CSS animations.</p>
+      <div class="spinner-container">
+        <div class="spinner4">
+          <div class="spinner4__cube spinner4__cube1"></div>
+          <div class="spinner4__cube spinner4__cube2"></div>
+          <div class="spinner4__cube spinner4__cube3"></div>
+          <div class="spinner4__cube spinner4__cube4"></div>
+          <div class="spinner4__cube spinner4__cube5"></div>
+          <div class="spinner4__cube spinner4__cube6"></div>
+          <div class="spinner4__cube spinner4__cube7"></div>
+          <div class="spinner4__cube spinner4__cube8"></div>
+          <div class="spinner4__cube spinner4__cube9"></div>
+        </div>
+      </div>
+      <p>Some simple pure CSS animations.</p>
+      <a href="experimentation-css-spinners.php" class="button button--theme-color button--top-margin">View Project</a>
     </section>
-    <section class="section section--dark">
-      <h2>CSS Flexbox</h2>
-      <p>A responsive layout using CSS Flexbox.</p>
-      <a href="css-flexbox-experiment.php" class="button button--white button--top-margin" target="_blank">View</a>
-    </section>
-    <section class="section section--light">
-      <h2>CSS Grid</h2>
-      <p>A responsive layout using CSS Grid.</p>
-      <a href="css-grid-experiment.php" class="button button--theme-color button--top-margin" target="_blank">View</a>
-    </section>
+    <div class="parralax parralax--subpage2"><!-- --></div>
     <?php include("includes/_footer.php");?>
   </body>
 </html>

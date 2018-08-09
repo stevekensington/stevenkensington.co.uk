@@ -1,0 +1,140 @@
+.spinner-container {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+/* Spinner 1 */
+.spinner1:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  height:120px;
+  width:120px;
+  margin-left: -60px;
+  border-radius: 50%;
+  border-top: 5px solid $main-theme-color;
+  border-right: 5px solid transparent;
+  animation: spinner 0.7s linear infinite;
+}
+/* Spinner 2 */
+.spinner2:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  height:120px;
+  width:120px;
+  margin-left: -60px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: $secondary-theme-color;
+  border-bottom-color: $main-theme-color;
+  animation: spinner 1.2s ease infinite;
+}
+/* Spinner 1 & 2 Animation */
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Spinner 3 */
+.spinner3 {
+  margin: 100px auto;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  animation: spinner3-rotate 2.0s linear infinite;
+}
+.spinner3__dot1, .spinner3__dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  animation: spinner3-bounce 2.0s ease-in-out infinite;
+}
+.spinner3__dot1 {
+  background-color: $main-theme-color;
+}
+.spinner3__dot2 {
+  top: auto;
+  bottom: 0;
+  background-color: $secondary-theme-color;
+  animation-delay: -1.0s;
+}
+
+/* Spinner 3 Animation */
+@keyframes spinner3-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner3-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+  }
+}
+
+/* Spinner 4 */
+.spinner4 {
+  width: 90px;
+  height: 90px;
+  margin: 100px auto;
+}
+.spinner4__cube {
+  width: 30px;
+  height: 30px;
+  float: left;
+  background-color: #333;
+  animation: spinner4 1.3s ease-in-out infinite;
+}
+.spinner4__cube1 {
+  animation-delay: 0.2s;
+  background-color: #374482;
+}
+.spinner4__cube2 {
+  animation-delay: 0.3s;
+  background-color: #26578a;
+}
+.spinner4__cube3 {
+  animation-delay: 0.4s;
+  background-color: $main-theme-color;
+}
+.spinner4__cube4 {
+  animation-delay: 0.1s;
+  background-color: #48307a;
+}
+.spinner4__cube5 {
+  animation-delay: 0.2s;
+  background-color: #374382;
+}
+.spinner4__cube6 {
+  animation-delay: 0.3s;
+  background-color: #26578a;
+}
+.spinner4__cube7 {
+  animation-delay: 0s;
+  background-color: $secondary-theme-color;
+}
+.spinner4__cube8 {
+  animation-delay: 0.1s;
+  background-color: #483079;
+}
+.spinner4__cube9 {
+  animation-delay: 0.2s;
+  background-color: #374382;
+}
+
+/* Spinner 4 Animation */
+@keyframes spinner4 {
+  0%, 70%, 100% {
+    transform: scale3D(1, 1, 1);
+  } 35% {
+    transform: scale3D(0, 0, 1);
+  }
+}

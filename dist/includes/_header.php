@@ -5,7 +5,7 @@
   <a href="index.php" class="menu__item">Home</a>
   <a href="experience.php" class="menu__item">Experience</a>
   <a href="work.php" class="menu__item">Work</a>
-  <!--<a href="experimentation.php" class="menu__item">Experimentation</a>-->
+  <a href="experimentation.php" class="menu__item">Experimentation</a>
   <a href="contact.php" class="menu__item">Contact</a>
 </div>
 <div id="MenuFadeout" class="menu-fadeout" onclick="closeMenu()"><!--  --></div>
